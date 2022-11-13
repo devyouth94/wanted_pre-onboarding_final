@@ -13,5 +13,5 @@
     "ecmaFeatures": { "jsx": true }
   },
   "plugins": ["react", "@typescript-eslint"],
-  "ignorePatterns": ["config-overrides.js"]
+  "ignorePatterns": ["config-overrides.js", "tailwind.config.js"]
 }
