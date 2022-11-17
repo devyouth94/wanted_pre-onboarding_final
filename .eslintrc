@@ -6,12 +6,17 @@
     "es6": true,
     "commonjs": true
   },
-  "extends": ["plugin:prettier/recommended", "plugin:@typescript-eslint/recommended"],
+  "extends": [
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
   "parserOptions": {
     "project": "./tsconfig.json",
     "sourceType": "module",
     "ecmaFeatures": { "jsx": true }
   },
-  "plugins": ["react", "@typescript-eslint"],
-  "ignorePatterns": ["config-overrides.js", "tailwind.config.js"]
+  "rules": { "tailwindcss/classname-order": "off" },
+  "plugins": ["react", "@typescript-eslint", "tailwindcss"],
+  "ignorePatterns": ["config-overrides.js", "tailwind.config.js", "postcss.config.js"]
 }
